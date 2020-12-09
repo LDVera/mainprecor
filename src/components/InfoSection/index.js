@@ -1,5 +1,6 @@
 import React from 'react'
 import {Boton} from '../Boton'
+import imagen from '../../images/test.svg'
 import {
   InfoContainer,
   InfoWrapper,
@@ -15,25 +16,49 @@ import {
   Img
 }from'../InfoSection/InfoElements';
 
-const InfoSection = () => {
+const InfoSection = ({
+  lightBg, 
+  id,
+  imgStarts, 
+  topLine, 
+  lightText, 
+  headLine, 
+  darkText, 
+  description, 
+  buttonLabel, 
+  img, 
+  alt, 
+  primary,
+  dark,
+  dark2
+}) => {
   return (
     <>
-      <InfoContainer>
+      <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
-          <InfoRow>
+          <InfoRow imgStarts={imgStarts} >
             <Column1>
               <TextWrapper>
-                <TopLine>call</TopLine>
-                <Heading>mainpre</Heading>
-                <Subtitle>herrramentales</Subtitle>
-                <BtnWrap>
-                  <Boton to='home'/>
+                <TopLine>{topLine}</TopLine>
+                <Heading lightText={lightText} >{headLine}</Heading>
+                <Subtitle darkText={darkText} >{description}</Subtitle>
+                <BtnWrap >
+                  <Boton to='home'
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-40}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                  > {buttonLabel} </Boton>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                {/* <Img /> */}
+                <Img src={imagen}/>
               </ImgWrap>
             </Column2>
           </InfoRow>

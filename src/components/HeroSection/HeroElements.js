@@ -19,11 +19,18 @@ export const HeroContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    // background:linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), 
-    // linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent: 100%);
+    // background: rgb(0,0,0);
+    // background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.4990371148459384) 100%);
+    
+    // fondo gradiente de top (white) a bottom (black)
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.4990371148459384) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0.5242471988795518) 0%, rgba(82,82,82,0.4962359943977591) 50%, rgba(255,255,255,0.6502976190476191) 100%);
     z-index: 2;
+  }
+
+  // condicion para que se adapte a la pantalla de moviles
+  @media screen and (max-width: 768px){
+    height: 730px;
   }
   
 `
@@ -60,7 +67,7 @@ export const HeroContent = styled.div`
   align-items: center;
 `
 
-export const HeroH1 = styled.h1`
+export const HeroH1 = styled.img`
   color: #fff;
   font-size: 48px;
   text-align: center;

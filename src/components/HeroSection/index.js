@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Video from '../../videos/Video.mp4';
 import {Boton} from '../Boton';
+import Logo from '../../images/mainprecor.svg';
 import 
 {
   HeroContainer, 
@@ -31,7 +32,7 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent >
         {/* sustituir por el logo de mainprecor */}
-        <HeroH1> MAINPRECOR </HeroH1>
+        <HeroH1 src={Logo} />
         <HeroP>
           profesionales especializados en la fabricación de herramentales, 
           dispositivos industriales, moldes, troqueles y desarrollo de piezas diversas.

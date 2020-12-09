@@ -1,33 +1,34 @@
 import React from 'react';
 import './Navbar.css';
 import {FaBars} from 'react-icons/fa';
+// import Logo from '../../assets/mainprecor.svg';
 import 
 {
-  AiFillMail, 
-  AiFillPhone, 
-  AiFillFacebook,
-  AiFillTwitterSquare,
-  AiOutlineInstagram
+  // AiFillMail, 
+  // AiFillPhone, 
+  // AiFillFacebook,
+  // AiFillTwitterSquare,
+  // AiOutlineInstagram
 } 
 from 'react-icons/ai';
 
 import 
 {     
   Nav, 
-  Info,
-  InfoTop,
+  // Info,
+  // InfoTop,
   NavbarContainer, 
-  InfoContainer,
+  // InfoContainer,
   NavLogo, 
   MobileIcon, 
   NavMenu,
-  InfoMenu, 
+  // InfoMenu, 
   NavItem,
-  InfoItem, 
+  // InfoItem, 
   NavLinks,
-  InfoLinks,
-  InfoMail,
-  InfoPhone
+  // InfoLinks,
+  // InfoMail,
+  // InfoPhone
 }
 from './NavbarElements';
 
