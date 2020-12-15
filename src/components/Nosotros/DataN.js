@@ -1,7 +1,10 @@
 export const nosotrosData = {
   id: 'Nosotros',
-  lightBg: false,
+  lightBg: true,
+  lightBgC: true,
   lightText: true,
+  wrapperBwhite: true,
+  //final de propiedades para tema blanco
   lightTextDesc: true,
   // topLine: 'Premium Bank',
   // headLine: 'Unlimited Transactions with zero fees',
@@ -9,8 +12,4 @@ export const nosotrosData = {
   // buttonLabel: 'Get Started',
   imgStarts: false, 
   // img: require("../../images/test.svg"),
-  alt: 'tubes',
-  dark: true,
-  primary: true,
-  darkText: false
 };

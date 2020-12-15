@@ -25,7 +25,7 @@ export const InfoRow  = styled.div`
   grid-template-areas: ${({imgStarts}) => imgStarts ? `'col2 col1'` : `'col1 col2'`};
 
   @media screen and (max-width: 768px){
-    grid-template-areas: ${({imgStart}) => imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2` };
+    //grid-template-areas: ${({imgStart}) => imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2` };
   }
 `
 export const Column1 = styled.div`
@@ -43,17 +43,18 @@ export const Column2 = styled.div`
 export const TextWrapper  = styled.div`
   max-width: 540px;
   padding-top: 0 ;
+  margin-top: 50px;
   padding-bottom: 60px;
 
 `
 export const TopLine  = styled.p`
-  
   font-size: 16px;
   line:height: 16px;
   font-weight: 700;
   letter-apacing:1.4px;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 36px;
+  color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `
 
 // Considerara el cambio de la etiqueta

@@ -23,8 +23,9 @@ export const WrapperNosotros = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   gap: 16px;
-  padding: 0 50px;
-  background: #000;
+  //padding: 0 50px;
+  background: ${({wrapperBwhite}) => (wrapperBwhite ? '#fff' : '#000')};
+  
 
   @media screen and (max-width: 1000px){
     grid-template-columns: 1fr 1fr;
@@ -37,9 +38,11 @@ export const WrapperNosotros = styled.div`
 `
 
 export const CardNosotros = styled.div`
-  background: #fff;
+  background: ${({lightBgC}) => (lightBgC ? '#AC1B46' : '#fff')};
+  
   display: flex;
-  flex-direction: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
   max-height: 340px;
@@ -56,12 +59,13 @@ export const CardNosotros = styled.div`
 `
 
 export const IconNosotros = styled.img`
+  background: ${({lightBgC}) => (lightBgC ? '#AC1B46' : '#fff')};
   height: 160px;
   width: 160px;
   margin-bottom: 64px;
 `
 export const H1Nosotros = styled.h1`
-
+  
   font-size: 2.5rem;
   color: #fff;
   margin-bottom: 64px;
@@ -72,11 +76,13 @@ export const H1Nosotros = styled.h1`
 
 `
 export const H2Nosotros = styled.h2`
+  color: ${({lightText}) => (lightText ? '#fff' : '#000')};
   font-size: 1rem;
   margin-bottom: 10px;
 
 `
 export const PNosotros = styled.p`
+  color: ${({lightText}) => (lightText ? '#fff' : '#000')};
   font-size: 1rem;
   text-align:center;
 `
