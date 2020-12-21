@@ -1,4 +1,5 @@
 import React from 'react'
+import {FaFacebook, FaTwitter, FaInstagram} from 'react-icons/fa'
 import 
 {
   FooterContainer, 
@@ -7,7 +8,13 @@ import
   FooterLinksWrapper, 
   FooterLinkItems, 
   FooterLinkTittle, 
-  FooterLink 
+  FooterLink,
+  SocialMedia,
+  SocialMediaWrap,
+  SocialLogo,
+  SocialIcons,
+  SocialIconLink,
+  WebSiteRights,
 } 
 from './footerElements';
 
@@ -18,8 +25,8 @@ const Footer = () => {
         <FooterWrap>
           <FooterLinkContainer>
             <FooterLinksWrapper>
-              <FooterLinkTittle>mainpre</FooterLinkTittle>
               <FooterLinkItems>
+                  <FooterLinkTittle>mainpre</FooterLinkTittle>
                   <FooterLink to="/" >Home</FooterLink>
                   <FooterLink to="Productos" >Productos</FooterLink>
                   <FooterLink to="Nosotros" >Nosotros</FooterLink>
@@ -27,6 +34,29 @@ const Footer = () => {
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinkContainer>
+          <SocialMedia>
+            <SocialMediaWrap>
+              <SocialLogo to="/">
+                Mainprecor
+              </SocialLogo>
+              <SocialIcons >
+
+                <SocialIconLink href="/" target="_blank" arial-label="Facebook">
+                  <FaFacebook/>
+                </SocialIconLink>
+
+                <SocialIconLink href="/" target="_blank" arial-label="Twitter">
+                  <FaTwitter/>
+                </SocialIconLink>
+
+                <SocialIconLink href="/" target="_blank" arial-label="Instagram">
+                  <FaInstagram/>
+                </SocialIconLink>
+
+              </SocialIcons>
+              <WebSiteRights>Mainprecor @ { new Date().getFullYear() } All rights Reserved</WebSiteRights>
+            </SocialMediaWrap>
+          </SocialMedia>
         </FooterWrap>
       </FooterContainer>
     </>
