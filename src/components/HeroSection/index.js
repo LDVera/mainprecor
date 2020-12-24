@@ -34,8 +34,7 @@ const HeroSection = () => {
         {/* sustituir por el logo de mainprecor */}
         <HeroH1 src={Logo} />
         <HeroP>
-          profesionales especializados en la fabricación de herramentales, 
-          dispositivos industriales, moldes, troqueles y desarrollo de piezas diversas.
+          Somos un grupo de profesionales especializados en la fabricación de herramentales, dispositivos industriales, moldes, troqueles y desarrollo de piezas diversas.
         </HeroP>
         <HeroBtnWrapper>
           <Boton to="productos" onMouseEnter={onHover} onMouseLeave={onHover} >

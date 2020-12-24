@@ -15,14 +15,13 @@ export const InfoWrapper = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
-  justify-content: center;
+  //justify-content: center;
 `
 export const InfoRow  = styled.div`
-  max-width: 100%;
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
-  grid-template-areas: ${({imgStarts}) => (imgStarts ? `'col2 col1'` : `'col1 col2'`)};
+  grid-template-areas: ${({imgStarts}) => (imgStarts ? `'col2 col2 '` : `' col2 col2'`)};
 
   @media screen and (max-width: 500px){
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col1 col2'` : `'col1 col1'  'col2 col2'` )};
@@ -30,9 +29,9 @@ export const InfoRow  = styled.div`
 `
 export const Column1 = styled.div`
   margin-bottom: 15px;
+  margin-top: 3%;
   padding: 0 15px;
-  padding-top: 35px;
-  grid-area: col1;
+  grid-area: col2;
 `
 
 export const Column2 = styled.div`
@@ -45,12 +44,13 @@ export const TextWrapper  = styled.div`
   max-width: 100%;
   padding-top: 0 ;
   margin-top: 50px;
+  margin-right: 0px;
   padding-bottom: 60px;
 
 `
 export const TopLine  = styled.p`
   font-size: 16px;
-  line-height: 16px;
+  line:height: 16px;
   font-weight: 700;
   letter-apacing:1.4px;
   text-transform: uppercase;
@@ -61,11 +61,13 @@ export const TopLine  = styled.p`
 // Considerara el cambio de la etiqueta
 // ya se tiene asignado un h1 en el titulo de la pagina
 // o en su defecto sustiir el h1 del titulo por el logo.svg
-export const Heading = styled.h1`
-  
-  margin-bottom: 32px;
+export const Heading = styled.p`
+
+
+  max-width: 440px;
   font-size: 48px;
-  line-height: 1.1%;
+  margin-bottom: 24px; 
+  line-height: 80%;
   font-weight: 600;
   color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
 
@@ -76,7 +78,7 @@ export const Heading = styled.h1`
 `
 
 export const Subtitle = styled.p`
-  max-width: 440px;
+  max-width: 100%;
   margin-bottom: 35px; 
   font-size: 21px;
   line-height: 24px;
@@ -94,7 +96,6 @@ export const ImgWrap = styled.div`
 
 `
 export const Img = styled.img`
-  border-radius: 15px;
   width: 100%;
   margin: 0 0 10 px 0;
   padding-right: 0;

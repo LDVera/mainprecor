@@ -1,4 +1,4 @@
-export const homeObjOne = {
+export const homeObjCertificaciones = {
   id: 'Productos',
   lightBg: true,
   lightText: false,
@@ -7,9 +7,10 @@ export const homeObjOne = {
   // hace que cambie el comportamiento del layout en la pantalla
   cambio1: true,
   topLine: 'Premium Bank',
-  headLine: 'Nosotros',
-  description: 'Nuestro concepto se basa en la satisfacción de nuestros clientes, entregar a tiempo y con la precisión requerida. Somos una solución innovadora y competitiva de alto valor agregado.',
-  complementDescription: 'Nuestros esfuerzos se han encaminado hacia un solo propósito: ser líderes regionales en proveeduría de herramentales industriales.',
+  headLine: 'ISO 9001:2015',
+  headLineGto: 'Marca Gto',
+  descriptionIso: 'Contamos con la certificación internacional bajo la norma ISO 9001:2015, que es reflejo del compromiso que tenemos con nuestros clientes y la calidad de nuestros productos y servicios.',
+  descriptionGto: 'contamos con el distintivo Marca Gto. Otorgado por el Instituto Mexicano de Normalización y Certificación, AC, por cumplir con “Especificación Técnica-Requisitos”.',
   buttonLabel: 'Get Started',
   imgStarts: false, 
   // img: require("../../images/test.svg"),

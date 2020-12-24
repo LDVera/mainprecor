@@ -1,6 +1,6 @@
 import React from 'react'
-import {Boton} from '../Boton'
-import imagenNosotros from '../../images/nosotros.PNG'
+import Iso from '../../images/iso9001-2015.png'
+import Gto from '../../images/marca-gto.png'
 import {
   InfoContainer,
   InfoWrapper,
@@ -26,15 +26,15 @@ const InfoSection = ({
   lightText, 
   headLine, 
   darkText, 
-  description, 
-  complementDescription,
+  descriptionIso, 
+  descriptionGto,
+  headLineGto,
   buttonLabel, 
   img, 
   alt, 
   primary,
   dark,
   dark2,
-  cambio1,
   
 }) => {
 
@@ -45,22 +45,26 @@ const InfoSection = ({
       <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper id="infoWrapper">
           <InfoRow id="infoRow" imgStarts={imgStarts} >
-
-              <Column1>
+            <Column1>
+              <ImgWrap>
+                <Img src={Iso}/>
+              </ImgWrap>
               <TextWrapper>
-                
                 <Heading lightText={lightText} >{headLine}</Heading>
-                <Subtitle darkText={darkText} >{description}</Subtitle>
-                <Subtitle darkText={darkText} >{complementDescription}</Subtitle>
+                <Subtitle darkText={darkText} >{descriptionIso}</Subtitle>
               </TextWrapper>
-              </Column1>
+            </Column1>
             <Column2>
               <ImgWrap>
-                <Img src={imagenNosotros}/>
+                <Img src={Gto}/>
               </ImgWrap>
+              <TextWrapper>
+                <Heading lightText={lightText} >{headLineGto}</Heading>
+                <Subtitle darkText={darkText} >{descriptionGto}</Subtitle>
+              </TextWrapper>
             </Column2>
 
-          
+        
           </InfoRow>
         </InfoWrapper>
       </InfoContainer> 

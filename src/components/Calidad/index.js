@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Boton} from '../Boton'
-import imagenNosotros from '../../images/nosotros.PNG'
+import imagen from '../../images/test.svg'
 import {
   InfoContainer,
   InfoWrapper,
@@ -16,7 +16,7 @@ import {
   Img,
   column1clone,
   h1Element
-}from'../InfoSection/InfoElements';
+}from'../Calidad/calidadElements';
 
 const InfoSection = ({
   lightBg, 
@@ -27,7 +27,6 @@ const InfoSection = ({
   headLine, 
   darkText, 
   description, 
-  complementDescription,
   buttonLabel, 
   img, 
   alt, 
@@ -38,6 +37,8 @@ const InfoSection = ({
   
 }) => {
 
+  const [screenState, updateScreenState] = useState(cambio1)
+
 
   
   return (
@@ -47,18 +48,17 @@ const InfoSection = ({
           <InfoRow id="infoRow" imgStarts={imgStarts} >
 
               <Column1>
-              <TextWrapper>
-                
+              <TextWrapper id="textWrapper">
+                <TopLine darkText={darkText} >{topLine}</TopLine>
                 <Heading lightText={lightText} >{headLine}</Heading>
-                <Subtitle darkText={darkText} >{description}</Subtitle>
-                <Subtitle darkText={darkText} >{complementDescription}</Subtitle>
+                <Subtitle darkText={darkText} > {description} </Subtitle>
               </TextWrapper>
               </Column1>
-            <Column2>
+            {/* <Column2>
               <ImgWrap>
-                <Img src={imagenNosotros}/>
+                <Img src={imagen}/>
               </ImgWrap>
-            </Column2>
+            </Column2> */}
 
           
           </InfoRow>

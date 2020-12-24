@@ -16,6 +16,10 @@ export const InfoWrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+
+  @media screen and (max-width: 500px){
+    height: 900px
+  }
 `
 export const InfoRow  = styled.div`
   max-width: 100%;
@@ -62,10 +66,10 @@ export const TopLine  = styled.p`
 // ya se tiene asignado un h1 en el titulo de la pagina
 // o en su defecto sustiir el h1 del titulo por el logo.svg
 export const Heading = styled.h1`
-  
-  margin-bottom: 32px;
+  max-width: 440px;
   font-size: 48px;
-  line-height: 1.1%;
+  margin-bottom: 24px; 
+  line-height: 80%;
   font-weight: 600;
   color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
 
@@ -93,6 +97,7 @@ export const ImgWrap = styled.div`
   height: 100%;
 
 `
+
 export const Img = styled.img`
   border-radius: 15px;
   width: 100%;

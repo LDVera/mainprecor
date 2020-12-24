@@ -31,7 +31,6 @@ export const InfoRow  = styled.div`
 export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
-  padding-top: 35px;
   grid-area: col1;
 `
 
@@ -62,8 +61,7 @@ export const TopLine  = styled.p`
 // ya se tiene asignado un h1 en el titulo de la pagina
 // o en su defecto sustiir el h1 del titulo por el logo.svg
 export const Heading = styled.h1`
-  
-  margin-bottom: 32px;
+  margin-bottom:24px;
   font-size: 48px;
   line-height: 1.1%;
   font-weight: 600;
@@ -78,10 +76,8 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px; 
-  font-size: 21px;
+  font-size: 18px;
   line-height: 24px;
-  text-align: justify;
-  text-justify: inter-word;
   color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `
 export const BtnWrap  = styled.div`
@@ -94,7 +90,6 @@ export const ImgWrap = styled.div`
 
 `
 export const Img = styled.img`
-  border-radius: 15px;
   width: 100%;
   margin: 0 0 10 px 0;
   padding-right: 0;
