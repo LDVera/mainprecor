@@ -7,15 +7,18 @@ export const InfoContainer = styled.div`
   }
 `
 export const InfoWrapper = styled.div`
+  box-shadow: 0 4px 8px 0 rgba(245, 134, 134, 0.993), 0 6px 20px 0 rgba(245, 134, 134, 0.993);
   display: grid;
   z-index:1;
-  height: 675px;
+  height: 475px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
   margin-left: auto;
-  padding: 0 24px;
-  //justify-content: center;
+  padding: 24px 24px;
+  justify-content: center;
 `
 export const InfoRow  = styled.div`
   display: grid;

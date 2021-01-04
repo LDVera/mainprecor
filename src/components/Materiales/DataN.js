@@ -1,4 +1,4 @@
-export const nosotrosData = {
+export const materialesData = {
   id: 'Nosotros',
   lightBg: true,
   lightBgC: true,

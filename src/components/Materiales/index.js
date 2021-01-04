@@ -10,11 +10,10 @@ import {
   IconNosotros,
   H2Nosotros,
   PNosotros
-  
+} from './materialesElements';
+//! update the import
 
-} from '../Nosotros/nosotrosElements';
-
-const Nosotros = ({lightBg, lightBgC, lightText, wrapperBwhite}) => {
+const Materiales = ({lightBg, lightBgC, lightText, wrapperBwhite}) => {
   return (
     <>
       <ContenedorNosotros lightBg={lightBg} >
@@ -47,4 +46,4 @@ const Nosotros = ({lightBg, lightBgC, lightText, wrapperBwhite}) => {
   )
 }
 
-export default Nosotros
+export default Materiales

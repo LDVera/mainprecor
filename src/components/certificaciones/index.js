@@ -1,6 +1,6 @@
 import React from 'react'
 import Iso from '../../images/iso9001-2015.png'
-import Gto from '../../images/marca-gto.png'
+
 import {
   InfoContainer,
   InfoWrapper,
@@ -16,9 +16,9 @@ import {
   Img,
   column1clone,
   h1Element
-}from'../InfoSection/InfoElements';
+}from'../certificaciones/certificacionesElements';
 
-const InfoSection = ({
+const Certifiaciones = ({
   lightBg, 
   id,
   imgStarts, 
@@ -27,8 +27,6 @@ const InfoSection = ({
   headLine, 
   darkText, 
   descriptionIso, 
-  descriptionGto,
-  headLineGto,
   buttonLabel, 
   img, 
   alt, 
@@ -49,18 +47,11 @@ const InfoSection = ({
               <ImgWrap>
                 <Img src={Iso}/>
               </ImgWrap>
+            </Column1>
+            <Column2>
               <TextWrapper>
                 <Heading lightText={lightText} >{headLine}</Heading>
                 <Subtitle darkText={darkText} >{descriptionIso}</Subtitle>
-              </TextWrapper>
-            </Column1>
-            <Column2>
-              <ImgWrap>
-                <Img src={Gto}/>
-              </ImgWrap>
-              <TextWrapper>
-                <Heading lightText={lightText} >{headLineGto}</Heading>
-                <Subtitle darkText={darkText} >{descriptionGto}</Subtitle>
               </TextWrapper>
             </Column2>
 
@@ -72,4 +63,4 @@ const InfoSection = ({
   )
 }
 
-export default InfoSection
+export default Certifiaciones

@@ -8,8 +8,10 @@ import InfoSection from '../components/InfoSection';
 import { homeObjOne } from '../components/InfoSection/Data';
 import Certifiaciones from '../components/certificaciones';
 import { homeObjCertificaciones } from '../components/certificaciones/Data';
-import Nosotros from '../components/Nosotros';
-import { nosotrosData } from '../components/Nosotros/DataN';
+import Carousel2 from '../components/carousel2'
+
+import Materiales from '../components/Materiales';
+import { materialesData } from '../components/Materiales/DataN';
 import Footer from '../components/Footer';
 
 const Home = () => {
@@ -28,7 +30,9 @@ const Home = () => {
       <Calidad {...homeObjCalidad}/>
       <InfoSection {...homeObjOne} /> 
       <Certifiaciones {...homeObjCertificaciones} />
-      <Nosotros {...nosotrosData} />
+      <Materiales {...materialesData} />
+      <Carousel2/>
+      
       <Footer/>
     </>
   )

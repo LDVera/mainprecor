@@ -5,6 +5,7 @@ import {
   InfoContainer,
   InfoWrapper,
   InfoRow,
+  contenedorColumnas,
   Column1,
   Column2,
   TextWrapper,
@@ -45,22 +46,20 @@ const InfoSection = ({
       <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper id="infoWrapper">
           <InfoRow id="infoRow" imgStarts={imgStarts} >
-
+            {/* <contenedorColumnas> */}
               <Column1>
-              <TextWrapper>
-                
-                <Heading lightText={lightText} >{headLine}</Heading>
-                <Subtitle darkText={darkText} >{description}</Subtitle>
-                <Subtitle darkText={darkText} >{complementDescription}</Subtitle>
-              </TextWrapper>
+                <TextWrapper>
+                  <Heading lightText={lightText} >{headLine}</Heading>
+                  <Subtitle darkText={darkText} >{description}</Subtitle>
+                  <Subtitle darkText={darkText} >{complementDescription}</Subtitle>
+                </TextWrapper>
               </Column1>
-            <Column2>
-              <ImgWrap>
-                <Img src={imagenNosotros}/>
-              </ImgWrap>
-            </Column2>
-
-          
+              <Column2>
+                <ImgWrap>
+                  <Img src={imagenNosotros}/>
+                </ImgWrap>
+              </Column2>
+            {/* </contenedorColumnas> */}
           </InfoRow>
         </InfoWrapper>
       </InfoContainer> 
