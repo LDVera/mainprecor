@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContenedorNosotros = styled.div`
-  height: 800px;
+  height: ${({height}) => (height ? '1200px' : '600px' )};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +23,7 @@ export const WrapperNosotros = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   gap: 16px;
-  //padding: 0 50px;
+  padding: 0 50px;
   background: ${({wrapperBwhite}) => (wrapperBwhite ? '#fff' : '#000')};
   
 
@@ -67,7 +67,7 @@ export const IconNosotros = styled.img`
 export const H1Nosotros = styled.h1`
   
   font-size: 2.5rem;
-  color: #fff;
+  color: #000;
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px){

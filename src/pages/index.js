@@ -9,7 +9,6 @@ import { homeObjOne } from '../components/InfoSection/Data';
 import Certifiaciones from '../components/certificaciones';
 import { homeObjCertificaciones } from '../components/certificaciones/Data';
 import Carousel2 from '../components/carousel2'
-
 import Materiales from '../components/Materiales';
 import { materialesData } from '../components/Materiales/DataN';
 import Footer from '../components/Footer';

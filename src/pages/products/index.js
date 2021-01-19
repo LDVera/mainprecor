@@ -4,6 +4,7 @@ import Sidebar from '../../components/Sidebar';
 import Computer from '../../images/computer.svg';
 import Boy from '../../images/boy.svg';
 import Store from '../../images/store.svg';
+import Mastes from '../../images/mastes.jpeg';
 import {
   ContenedorNosotros,
   H1Nosotros,
@@ -31,21 +32,21 @@ const Products = () => {
       
         <WrapperNosotros >
           <CardNosotros >
-            <IconNosotros  src={Store} />
+            <IconNosotros  src={Mastes} />
             <H2Nosotros >Prueba1</H2Nosotros>
             <PNosotros >
               Hello there how are u!
             </PNosotros>
           </CardNosotros>
           <CardNosotros >
-            <IconNosotros  src={Boy} />
+            <IconNosotros  src={Mastes} />
             <H2Nosotros >Prueba1</H2Nosotros>
             <PNosotros >
               Hello there how are u!
             </PNosotros>
           </CardNosotros>
           <CardNosotros >
-            <IconNosotros  src={Boy} />
+            <IconNosotros  src={Mastes} />
             <H2Nosotros >Prueba1</H2Nosotros>
             <PNosotros >
               Hello there how are u!
