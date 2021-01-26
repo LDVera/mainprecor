@@ -28,14 +28,53 @@ const Navbar = ({toggle}) => {
 
           <NavMenu>
             <NavItem>
-              <NavLinks to="/">Inicio</NavLinks>
+              <NavLinks to="home"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-40}
+              >
+                Inicio
+              </NavLinks>
             </NavItem>
+
             <NavItem>
-              <NavLinks to="pructos">Productos</NavLinks>
+              <NavLinks to="nosotros"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-175}
+              >
+                Nosotros
+              </NavLinks>
             </NavItem>
+
             <NavItem>
-              <NavLinks to="nosotros">Nosotros</NavLinks>
+              <NavLinks to="productos"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-40}
+              >
+                Productos
+              </NavLinks>
             </NavItem>
+            
+            <NavItem>
+              <NavLinks to="maquinaria"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-40}
+              >
+                maquinaria  
+              </NavLinks>
+            </NavItem>
+            
             <NavItem>
               <NavLinks to="contacto">Contacto</NavLinks>
             </NavItem>

@@ -64,7 +64,7 @@ export const IconNosotros = styled.img`
   width: 160px;
   margin-bottom: 64px;
 `
-export const H1Nosotros = styled.h1`
+export const H1Nosotros = styled.p`
   
   font-size: 2.5rem;
   color: #000;

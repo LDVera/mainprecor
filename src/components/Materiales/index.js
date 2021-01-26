@@ -10,6 +10,10 @@ import Arrastre from '../../images/Arrastre.jpg';
 import Boquilla from '../../images/Boquilla.jpg';
 import Tope from '../../images/Tope.jpg';
 
+import Arillo from '../../images/Arillo.jpg';
+import Electrodos from '../../images/Electrodos.jpg';
+// import Leva from '../../images/Arillo.jpg';
+
 import {
   ContenedorNosotros,
   H1Nosotros,
@@ -23,7 +27,7 @@ import {
 const Materiales = ({lightBg, lightBgC, lightText, wrapperBwhite, heightfalse, height}) => {
   return (
     <>
-      <ContenedorNosotros lightBg={lightBg} height={heightfalse} >
+      <ContenedorNosotros lightBg={lightBg} height={heightfalse} id="productos" >
         <H1Nosotros> Forja </H1Nosotros>
         <WrapperNosotros wrapperBwhite={wrapperBwhite}>
           {/* inicio seccion de forja */}
@@ -55,7 +59,7 @@ const Materiales = ({lightBg, lightBgC, lightText, wrapperBwhite, heightfalse, h
       <ContenedorNosotros lightBg={lightBg} height={height} >
         <H1Nosotros> Herramentales </H1Nosotros>
         <WrapperNosotros wrapperBwhite={wrapperBwhite}>
-          {/* inicio seccion de forja */}
+          {/* inicio seccion herraentales */}
           <CardNosotros lightBgC={lightBgC}>
             <IconNosotros lightBgC={lightBgC} src={Holder} />
             <H2Nosotros lightText={lightText}>Holder</H2Nosotros>
@@ -105,8 +109,37 @@ const Materiales = ({lightBg, lightBgC, lightText, wrapperBwhite, heightfalse, h
               Tope
             </PNosotros>
           </CardNosotros>
-          {/* Fin seccion de forja */}
+          {/* Fin seccion de herramentales  */}
+        </WrapperNosotros>
+      </ContenedorNosotros>
 
+
+      <ContenedorNosotros lightBg={lightBg} height={heightfalse} >
+        <H1Nosotros> inyeccion de plastico y moldes </H1Nosotros>
+        <WrapperNosotros wrapperBwhite={wrapperBwhite}>
+          {/* inicio seccion de forja */}
+          <CardNosotros lightBgC={lightBgC}>
+            <IconNosotros lightBgC={lightBgC} src={Arillo} />
+            <H2Nosotros lightText={lightText}>Arillo</H2Nosotros>
+            <PNosotros lightText={lightText}>
+              Punzon de calidad y exelencia
+            </PNosotros>
+          </CardNosotros>
+          <CardNosotros lightBgC={lightBgC}>
+            <IconNosotros lightBgC={lightBgC} src={Electrodos} />
+            <H2Nosotros lightText={lightText}>Electrodos</H2Nosotros>
+            <PNosotros lightText={lightText}>
+              ¡Hey mira la calidad!
+            </PNosotros>
+          </CardNosotros>
+          <CardNosotros lightBgC={lightBgC}>
+            <IconNosotros lightBgC={lightBgC} src={BlockForja} />
+            <H2Nosotros lightText={lightText}>Block</H2Nosotros>
+            <PNosotros lightText={lightText}>
+              Blocks
+            </PNosotros>
+          </CardNosotros>
+          {/* Fin seccion de forja */}
         </WrapperNosotros>
       </ContenedorNosotros>
     </>

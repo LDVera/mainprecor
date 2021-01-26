@@ -1,13 +1,9 @@
 import React, {useState} from 'react'
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
-import Computer from '../../images/computer.svg';
-import Boy from '../../images/boy.svg';
-import Store from '../../images/store.svg';
 import Mastes from '../../images/mastes.jpeg';
 import {
   ContenedorNosotros,
-  H1Nosotros,
   WrapperNosotros,
   CardNosotros,
   IconNosotros,
@@ -53,49 +49,49 @@ const Products = () => {
             </PNosotros>
           </CardNosotros>
           <CardNosotros >
-            <IconNosotros  src={Boy} />
+            <IconNosotros  src={Mastes} />
             <H2Nosotros >Prueba1</H2Nosotros>
             <PNosotros >
               Hello there how are u!
             </PNosotros>
           </CardNosotros>
           <CardNosotros >
-            <IconNosotros  src={Boy} />
+            <IconNosotros  src={Mastes} />
             <H2Nosotros >Prueba1</H2Nosotros>
             <PNosotros >
               Hello there how are u!
             </PNosotros>
           </CardNosotros>
           <CardNosotros >
-            <IconNosotros  src={Boy} />
+            <IconNosotros  src={Mastes} />
             <H2Nosotros >Prueba1</H2Nosotros>
             <PNosotros >
               Hello there how are u!
             </PNosotros>
           </CardNosotros>
           <CardNosotros >
-            <IconNosotros  src={Boy} />
+            <IconNosotros  src={Mastes} />
             <H2Nosotros >Prueba1</H2Nosotros>
             <PNosotros >
               Hello there how are u!
             </PNosotros>
           </CardNosotros>
           <CardNosotros >
-            <IconNosotros  src={Boy} />
+            <IconNosotros  src={Mastes} />
             <H2Nosotros >Prueba1</H2Nosotros>
             <PNosotros >
               Hello there how are u!
             </PNosotros>
           </CardNosotros>
           <CardNosotros >
-            <IconNosotros  src={Boy} />
+            <IconNosotros  src={Mastes} />
             <H2Nosotros >Prueba1</H2Nosotros>
             <PNosotros >
               Hello there how are u!
             </PNosotros>
           </CardNosotros>
           <CardNosotros >
-            <IconNosotros  src={Computer} />
+            <IconNosotros  src={Mastes} />
             <H2Nosotros >Prueba1</H2Nosotros>
             <PNosotros >
               get access to our services now and come with the most quality products

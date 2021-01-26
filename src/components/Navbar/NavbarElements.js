@@ -153,23 +153,3 @@ export const NavLinks = styled(LinkS)`
     border-bottom: 3px solid #01bf71;
   }
 `
-
-export const InfoLinks = styled(LinkS)`
-  color: #fff;
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0 1rem;
-  
-  font-size: 1.5rem;
-  height: 100%;
-  cursor: pointer;
-
-  &.active{
-    border-bottom: 3px solid #01bf71;
-  }
-
-`
-
-
-

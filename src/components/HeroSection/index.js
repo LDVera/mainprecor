@@ -37,8 +37,16 @@ const HeroSection = () => {
           Somos un grupo de profesionales especializados en la fabricación de herramentales, dispositivos industriales, moldes, troqueles y desarrollo de piezas diversas.
         </HeroP>
         <HeroBtnWrapper>
-          <Boton to="productos" onMouseEnter={onHover} onMouseLeave={onHover} >
-            Ofertas {hover ? <ArrowForward /> : <ArrowRight/>}
+          <Boton to="productos" 
+            onMouseEnter={onHover} 
+            onMouseLeave={onHover}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-40} 
+          >
+            Productos {hover ? <ArrowForward /> : <ArrowRight/>}
           </Boton>
           
         </HeroBtnWrapper>

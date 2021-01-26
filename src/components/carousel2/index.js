@@ -11,27 +11,13 @@ import {
   InfoRow,
   Column1,
   LinkProducts,
-  linkElement,
-  
-  // Column2,
-  // TextWrapper,
-  // TopLine,
-  // Heading,
-  // Subtitle,
-  // BtnWrap,
-  // ImgWrap,
-  // Img,
-  // column1clone,
-  // h1Element
 }from'../carousel2/carouselElements';
 
 const Carousel2 = () => {
 
   return (
-
-
     <>
-      <InfoContainer >
+      <InfoContainer id="maquinaria" >
         <InfoWrapper id="infoWrapper">
           <InfoRow id="infoRow" >
             
@@ -44,8 +30,8 @@ const Carousel2 = () => {
                     alt="i1" 
                     style={
                       {
-                        height: "70vh",
-                        width: "160vh"
+                        height: "50vh",
+                        width: "110vh"
                       }
                     } 
                   />
