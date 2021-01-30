@@ -8,7 +8,7 @@ import
   HeroBg, 
   VideoBg,
   HeroContent,
-  HeroH1,
+  HeroImage,
   HeroBtnWrapper,
   HeroP,
   ArrowForward,
@@ -32,7 +32,7 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent >
         {/* sustituir por el logo de mainprecor */}
-        <HeroH1 src={Logo} />
+        <HeroImage src={Logo} />
         <HeroP>
           Somos un grupo de profesionales especializados en la fabricación de herramentales, dispositivos industriales, moldes, troqueles y desarrollo de piezas diversas.
         </HeroP>

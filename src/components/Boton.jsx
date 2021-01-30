@@ -21,4 +21,9 @@ export const Boton = styled(LinkS)`
     text-decoration: none;
     color: #fff;
   }
+
+  @media screen and (max-width: 768px){
+    
+    display: none;
+  }
 `;

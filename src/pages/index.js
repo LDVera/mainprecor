@@ -31,7 +31,6 @@ const Home = () => {
       <Certifiaciones {...homeObjCertificaciones} />
       <Materiales {...materialesData} />
       <Carousel2/>
-      
       <Footer/>
     </>
   )

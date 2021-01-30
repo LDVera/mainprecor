@@ -10,7 +10,7 @@ export const InfoWrapper = styled.div`
   box-shadow: 0 4px 8px 0 rgba(245, 134, 134, 0.993), 0 6px 20px 0 rgba(245, 134, 134, 0.993);
   display: grid;
   z-index:1;
-  height: 475px;
+  height: 600px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;

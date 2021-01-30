@@ -12,7 +12,8 @@ export const ContenedorNosotros = styled.div`
   @media screen and (max-width: 768px){
     height: 1900px;
   }
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 500px){
+    margin-top: 50px;
     height: 1900px;
   }
 `
@@ -65,13 +66,15 @@ export const IconNosotros = styled.img`
   margin-bottom: 64px;
 `
 export const H1Nosotros = styled.p`
-  
+  text-align: center;
   font-size: 2.5rem;
   color: #000;
   margin-bottom: 64px;
 
-  @media screen and (max-width: 480px){
-    font-size: 2rem;
+  @media screen and (max-width: 500px){
+    margin-top: 50px;
+    font-size: 2.5rem;
+
   }
 
 `

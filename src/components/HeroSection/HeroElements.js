@@ -27,7 +27,7 @@ export const HeroContainer = styled.div`
 
   // condicion para que se adapte a la pantalla de moviles
   @media screen and (max-width: 768px){
-    height: 730px;
+    height: 770px;
   }
   
 `
@@ -64,12 +64,13 @@ export const HeroContent = styled.div`
   align-items: center;
 `
 
-export const HeroH1 = styled.img`
+export const HeroImage = styled.img`
   color: #fff;
   font-size: 48px;
   text-align: center;
 
   @media screen and (max-width: 768px){
+    padding-top: 100px;
     font-size: 40px;
   }
 `

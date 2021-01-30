@@ -10,33 +10,56 @@ const Sidebar = ({isOpen, toggle}) => {
         </Icon>
         <SidebarWrapper>
           <SidebarMenu>
-            <SidebarLink to="/" onClick={toggle}>Inicio</SidebarLink>
             <SidebarLink 
-              to="Products" onClick={toggle}
+              to="home" 
+              onClick={toggle}
               smooth={true}
-              duration={500}
+              duration={1500}
+              spy={true}
+              exact="true"
+              offset={0}
+            >Inicio</SidebarLink>
+
+            <SidebarLink 
+              to="nosotros" 
+              onClick={toggle}
+              smooth={true}
+              duration={1500}
+              spy={true}
+              exact="true"
+              offset={185}
+            >Nosotros</SidebarLink>
+
+            <SidebarLink 
+              to="productos" 
+              onClick={toggle}
+              smooth={true}
+              duration={1500}
+              spy={true}
+              exact="true"
+              offset={250}
+            >Productos</SidebarLink>
+
+            <SidebarLink 
+              to="maquinaria" 
+              onClick={toggle}
+              smooth={true}
+              duration={1000}
               spy={true}
               exact="true"
               offset={-40}
-                    // primary={primary ? 1 : 0}
-                    // dark={dark ? 1 : 0}
-                    // dark2={dark2 ? 1 : 0}
-            >
-              Productos
-            </SidebarLink>
+            >Maquinaria</SidebarLink>
 
-{/* 
-            <Boton to='home'
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-40}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                  > {buttonLabel} </Boton> */}
-            <SidebarLink to="nosotros" onClick={toggle}>Nosotros</SidebarLink>
+            <SidebarLink 
+              to="Contacto" 
+              onClick={toggle}
+              smooth={true}
+              duration={1000}
+              spy={true}
+              exact="true"
+              offset={-20}
+            >Contacto</SidebarLink>
+
             <SidebarLink to="contacto" onClick={toggle}>Contacto</SidebarLink>
           </SidebarMenu>
         </SidebarWrapper>
