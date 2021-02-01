@@ -7,7 +7,6 @@ import
   FooterLinkContainer, 
   FooterLinksWrapper, 
   FooterLinkItems, 
-  FooterLinkTittle, 
   FooterLink,
   SocialMedia,
   SocialMediaWrap,
@@ -26,7 +25,6 @@ const Footer = () => {
           <FooterLinkContainer>
             <FooterLinksWrapper>
               <FooterLinkItems>
-                  <FooterLinkTittle>mainpre</FooterLinkTittle>
                   <FooterLink to="/" >Home</FooterLink>
                   <FooterLink to="Productos" >Productos</FooterLink>
                   <FooterLink to="Nosotros" >Nosotros</FooterLink>

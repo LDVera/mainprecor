@@ -40,27 +40,27 @@ const Sidebar = ({isOpen, toggle}) => {
               offset={250}
             >Productos</SidebarLink>
 
-            <SidebarLink 
+            {/* <SidebarLink 
               to="maquinaria" 
               onClick={toggle}
               smooth={true}
               duration={1000}
               spy={true}
               exact="true"
-              offset={-40}
-            >Maquinaria</SidebarLink>
+              offset={90}
+            >Maquinaria</SidebarLink> */}
 
             <SidebarLink 
-              to="Contacto" 
+              to="contacto" 
               onClick={toggle}
               smooth={true}
               duration={1000}
               spy={true}
               exact="true"
-              offset={-20}
+              offset={250}
             >Contacto</SidebarLink>
 
-            <SidebarLink to="contacto" onClick={toggle}>Contacto</SidebarLink>
+            
           </SidebarMenu>
         </SidebarWrapper>
       </SidebarContainer>
